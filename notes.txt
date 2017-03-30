@@ -1,0 +1,26 @@
+so dist = acos(sin(lat1)*sin(lat2) + cos(lat1)*cos(lat2)*cos(long)) * radius of earth
+
+this is the formula
+
+step 1: we need to get all the data from the database and check which loc:{lat, long} is inside that distance/ radius
+
+so we have initial loc{lat, long}, 2nd one we get from the database, we measure the distance between those 2 points and if it is < dist, then we list it
+
+
+{crimes :
+    {
+        spotcrime : [{}]
+        user : [{},{},...]
+    }
+}
+
+this is one
+
+{crimes:
+[{<spotcrime's>}],[<user's>]
+}
+
+this is another
+
+
+*If you add multiple alerts at the same location, the last one(most up to date) is the only one that will show up on the map. I can fix it later if time permits. It's called overlapping marker function.
